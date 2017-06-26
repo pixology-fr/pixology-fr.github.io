@@ -17,7 +17,7 @@
     
     html { font-size:1em; }    
     body {
-      font: 100%/1em "BlockZone-Regular", monospace;
+      font: 100%/1 "BlockZone-Regular", monospace;
       color: #444;
       background-color: #FFF6EF;
     }
@@ -35,18 +35,12 @@
     }
     @media screen and (max-width: 480px) {
       .container { width: 310px; }
-      .logo {
-        font-size: 8px;
-        line-height: 1em;
-      }
+      .logo { font-size: 8px; }
       
     }
     @media screen and (min-width: 481px) and (max-width: 84ex) {
       .container { width: 480px; }
-      .logo {
-        font-size: 0.7em;
-        line-height: 1em;
-      }
+      .logo { font-size: 0.7em; }
     }
     /* see https://css-tricks.com/snippets/css/retina-display-media-query/ */
     @media
@@ -57,58 +51,30 @@
     only screen and (                min-resolution: 192dpi) and (min-width: 481px),
     only screen and (                min-resolution: 2dppx)  and (min-width: 481px) { 
       /* Small screen, retina, stuff to override above media query */
-      .logo {
-        font-size: 7px;
-        line-height: 1em;
-      }
+      .logo { font-size: 7px; }
     }
     
     @media screen and (min-width: 84ex)  and (max-width: 109ex) {
       .container { width: 84ex; }
-      .logo {
-        font-size: 0.9em;
-        line-height: 1em;
-      }
+      .logo { font-size: 0.9em; }
     }
     @media screen and (min-width: 109ex)  and (max-width: 134ex) {
       .container { width: 109ex; }
-      .logo {
-        font-size: 1.1em;
-        line-height: 1em;
-      }
+      .logo { font-size: 1.1em; }
     }
     @media screen and (min-width: 134ex)  and (max-width: 159ex) {
       .container { width: 134ex; }
-      .logo {
-        font-size: 1.3em;
-        line-height: 1em;
-      }
+      .logo { font-size: 1.3em; }
     }
     @media screen and (min-width: 159ex)  and (max-width: 184ex) {
       .container { width: 159ex; }
-      .logo {
-        font-size: 1.5em;
-        line-height: 1em;
-      }
+      .logo { font-size: 1.5em; }
     }
     @media screen and (min-width: 184ex){
       .container { width: 184ex; }
-      .logo {
-        font-size: 1.7em;
-        line-height: 1em;
-      }
+      .logo { font-size: 1.7em; }
     }
 
-/*    @media screen and (max-width: 640px) {
-      .container {
-        width: auto;
-      }
-      .logo {
-        font-size: 0.5em;
-        line-height: 1em;
-      }
-
-    }*/
     p.line {margin: 0;}
     .s1 {color: magenta}
     .s2 {color: cyan}
