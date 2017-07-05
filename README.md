@@ -1,6 +1,13 @@
 README
 ======
 
+PIXOLOGY, "BITS FOR HUMANS".
+
+Conseil, formation et web making
+
+Consultant, trainer and Web Maker
+
+
 Sources
 -------
 
