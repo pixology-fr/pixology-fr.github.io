@@ -2,125 +2,160 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>pixology ░ bits for humans ░</title>
+  <title>Fabrice Luraine, design &amp; développement web</title>
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <style type="text/css">
+    :root {
+      --black: black;
+      --white: white;
+    }
     @font-face {
-        font-family: 'BlockZone-Regular';
-        src: 
-            url('assets/fonts/blockzone-webfont.woff2') format('woff2'),
-            url('assets/fonts/blockzone-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-
+      font-family: 'TeXGyreHeros';
+      font-style: normal;
+      font-weight: 400;
+      src: local('TeXGyreHeros-Regular'), url('assets/fonts/texgyreheros-regular-webfont.woff') format('woff');
     }
-    
-    html { font-size:1em; }    
+    @font-face {
+      font-family: 'TeXGyreHeros';
+      font-style: italic;
+      font-weight: 400;
+      src: local('TeXGyreHeros-Italic'), url('assets/fonts/texgyreheros-italic-webfont.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'TeXGyreHeros';
+      font-style: normal;
+      font-weight: 700;
+      src: local('TeXGyreHeros-Bold'), url('assets/fonts/texgyreheros-bold-webfont.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'TeXGyreHeros';
+      font-style: italic;
+      font-weight: 700;
+      src: local('TeXGyreHeros-BoldItalic'), url('assets/fonts/texgyreheros-bolditalic-webfont.woff') format('woff');
+    }
     body {
-      font: 100%/1 "BlockZone-Regular", monospace;
-      color: #444;
-      background-color: white;
+      text-rendering: optimizeLegibility;
+      font-family: 'TeXGyreHeros', 
+                   -apple-system, BlinkMacSystemFont, "Segoe UI", 
+                   Roboto, Oxygen-Sans, Ubuntu, 
+                   Cantarell, "Helvetica Neue", sans-serif;
+      background-color: var(--black);
+      color: var(--white);
+      margin: 0;
+      padding: 0;
     }
 
-    .hidden {display:none;}
-
-    .container {
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 3em;
-
+    .wrapper {
+      height: calc(100vh - 2em);
+      margin: 4em;
+    }
+    .title {
+      position: fixed;
+      top: 0;
+      right: 1em;
+      text-align: right;
+    }
+    .subtitle {
+      position: fixed;
+      bottom: 0;
+      left: 1em;
     }
     .logo {
-      margin: 0;
+      position: fixed;
+      bottom: 0;
+      right: 1em;
+      font-size: 2.3em;
+      line-height: 1.1;
     }
-    @media screen and (max-width: 480px) {
-      .container { width: 310px; }
-      .logo { font-size: 8px; }
-      
+    .contact {
+      position: fixed;
+      top: 2.3em;
+      left: 1em;
+      writing-mode: vertical-lr;
+      font-size: 0.8em;
     }
-    @media screen and (min-width: 481px) and (max-width: 84ex) {
-      .container { width: 480px; }
-      .logo { font-size: 0.7em; }
+    .content {
+      display: grid;
+      height: 100%;
+      margin: 6em auto;
+      max-width: 72em;
+      grid-template-columns: repeat(auto-fit, minmax(3em, 1fr));
+      grid-gap: 1em;
     }
-    /* see https://css-tricks.com/snippets/css/retina-display-media-query/ */
-    @media
-    only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 481px),
-    only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 481px),
-    only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 481px),
-    only screen and (        min-device-pixel-ratio: 2)      and (min-width: 481px),
-    only screen and (                min-resolution: 192dpi) and (min-width: 481px),
-    only screen and (                min-resolution: 2dppx)  and (min-width: 481px) { 
-      /* Small screen, retina, stuff to override above media query */
-      .logo { font-size: 7px; }
+    .content > .block {
+      grid-column: 1 / span 6;
+      justify-self: center;
     }
-    
-    @media screen and (min-width: 84ex)  and (max-width: 109ex) {
-      .container { width: 84ex; }
-      .logo { font-size: 0.9em; }
+    .content > .col {
+      grid-column-end: span 3;
     }
-    @media screen and (min-width: 109ex)  and (max-width: 134ex) {
-      .container { width: 109ex; }
-      .logo { font-size: 1.1em; }
+    h1, .h1 {
+      font-size: 2.3em;
+      font-weight: 700;
+      line-height: 1.1;
+      text-shadow: 5px 5px 10px var(--black);
     }
-    @media screen and (min-width: 134ex)  and (max-width: 159ex) {
-      .container { width: 134ex; }
-      .logo { font-size: 1.3em; }
-    }
-    @media screen and (min-width: 159ex)  and (max-width: 184ex) {
-      .container { width: 159ex; }
-      .logo { font-size: 1.5em; }
-    }
-    @media screen and (min-width: 184ex){
-      .container { width: 184ex; }
-      .logo { font-size: 1.7em; }
-    }
-
-    p.line {margin: 0;}
-    .s1 {color: magenta}
-    .s2 {color: cyan}
-    .s3 {color: yellow}
+     
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="wrapper">
     <header>
-      <figure class="logo" role="img" aria-labelledby="pixology-logo-caption">
-        <!-- Extra characters: ≡║☼◘◙▓▒░▲-;~☺ -->
-        <p class="line"><span class="space">                                                 </span>║◘◘░░◘░;<span class="space">  </span>≡◘▒▒▓▒░</p>
-        <p class="line"><span class="space">                                                   </span>◘░◘≡<span class="space">      </span>▒▒║</p>
-        <p class="line"><span class="space">                                                   </span>▲◙◘░ <span class="space">    </span>◘▓║</p>
-        <p class="line"><span class="space">                                                    </span>◙░◙<span class="space">    </span>║▓░</p>
-        <p class="line"><span class="space">                                                    </span><span class="s1">░░</span>◙;<span class="space">  </span>≡▓░</p>
-        <p class="line"><span class="space"> </span>-<span class="s2">~</span><span class="s1">;~</span> <span class="space">                                              </span>☼◙<span class="s1">◘</span>║ ☼▓░</p>
-        <p class="line">-≡◙║░<span class="space">    </span>-~~~;-<span class="space">        </span><span class="s1">~--~</span><span class="space">              </span>;;;▲- <span class="space">      </span>◙░◘≡▓░</p>
-        <p class="line">║<span class="s3">░</span>◘◙◘ ▲≡░░◘◘◙▒▒▒◙≡ <span class="space">    </span>≡◘░◘░~<span class="space">          </span>▲▒▒▒▓◙<span class="space">        </span>░◘◘▒◘</p>
-        <p class="line"><span class="s1">║░</span>◘◙◙░░║║░◘◘◙◙▒▒▒▓▓░<span class="space">    </span>▲░║░◘☼<span class="space">        </span>≡▒◙◙▒≡ <span class="space">        </span>☼◙◘<span class="s2">◘</span></p>
-        <p class="line">║<span class="s2">░◘</span>◙◙║║║░║≡☼☼║░▒▓▒▒▓▓; <span class="space">  </span>☼◘░░◘║<span class="space">      </span>◘◙◙◙▒☼<span class="space">          </span>≡◙<span class="s2">◘</span></p>
-        <p class="line">║░◘◙◙║║▲<span class="space">        </span>☼▒▒▒▒▓~ <span class="space">  </span>▲◘░░◘◘~<span class="space">  </span>;◙◙◘◙▒;<span class="space">          </span>;▒<span class="s3">◘</span></p>
-        <p class="line">║░◘◙◙║~<span class="space">          </span>-▒▒▒▒▒<span class="space">    </span>▲◘░░◘◙☼☼◙◘◘◙◙~<span class="space">          </span>;▒░</p>
-        <p class="line">║░◘◙▒;<span class="space">            </span>☼▓▒▒▓▲<span class="space">    </span>;◘░◘◘◙◙◘◘◙◘-<span class="space">          </span>▲▒░</p>
-        <p class="line">║░◘◙◙ <span class="space">            </span>~▓▒▒▓☼ <span class="space">    </span>~◘░◘◘◘◘◘◙~<span class="space">        </span>≡≡║▒║</p>
-        <p class="line">║░◘◙◙ <span class="space">            </span>;▓▒▒▓☼ <span class="space">    </span>▲◘░<span class="s2">◘◘</span><span class="s3">◙</span>◘◘◙◙~<span class="space">      </span>≡◙░◙☼</p>
-        <p class="line">║░◘◙▒~<span class="space">            </span>◙▒▒▒▓;<span class="space">    </span>║◘░░◙≡<span class="s3">║</span><span class="s1">◙</span>◘◙◙▒;<span class="space">      </span>--</p>
-        <p class="line">║░◘◙◙║; <span class="space">        </span>-◘▓▒▒▓◙<span class="space">    </span>░◘░░◘▲<span class="space">  </span><span class="s1">☼</span><span class="s2">◙</span>◙◙◙▒▲</p>
-        <p class="line">║░◘◙◙║░≡; <span class="space">    </span>~║▓▓▒▒▓▓ <span class="space">  </span>~░░░◘◘~<span class="space">    </span>~<span class="s2">◙</span>◙◙◙▒≡</p>
-        <p class="line">║░◘◙◙║║║░░◘░◘◙▒▒▒▒▒▓<span class="s3">◙</span> <span class="space">  </span>;░░░◘║<span class="space">        </span>░<span class="s2">▒</span>◙◙▒║</p>
-        <p class="line">║░◘<span class="s2">◙</span>◙║░║║░░◘<span class="s2">◘◙</span>◙▒▓<span class="s1">▓</span><span class="s3">◙</span>≡ <span class="space">  </span>☼░║░◘☼<span class="space">          </span>║▒◙◙▒░</p>
-        <p class="line">║░◘<span class="s3">◙</span>◘ -▲≡░<span class="s2">◘◘</span>◙◙◙◘≡~<span class="space">    </span>≡░░░░~<span class="space">            </span>;▒▒▒▓◙</p>
-        <p class="line">║░<span class="s3">◘</span>◙◙ <span class="space">                                    </span>-<span class="space">  </span>-</p>
-        <p class="line">║░◘◙◘</p>
-        <p class="line">║░◘◙◘</p>
-        <p class="line">║░◘◙◘<span class="space">            </span>░<span class="space">    </span>P I X O L O G Y<span class="space">    </span>░</p>
-        <p class="line">║░◘◙◘</p>
-        <p class="line">║░◘◙◘ <span class="space">                    </span>☺<span class="space">    </span>BITS FOR HUMANS<span class="space">    </span>☺</p>
-        
-        <figcaption class="hidden" id="pixology-logo-caption">
-          "<cite>PIXOLOGY, bits for humans</cite>",
-          ANSI Art pixology logo
-        </figcaption>
-      </figure>
+      <h1 class="title h1">Fabrice Luraine</h1>
+      <p class="subtitle h1" role="doc-subtitle">design &amp;<br />
+                                                 développement web</p>
     </header>
+    <main class="content">
+      <p class="block">
+      ff fi fl ri tl ffl oe Amet itaque cupiditate repellat eius odit Illo eum incidunt debitis
+      tenetur possimus, ipsa Aut veniam deleniti quaerat quisquam vero! Dolore
+      laudantium error accusantium neque sapiente Alias velit non in
+      voluptatibus.
+      Amet itaque cupiditate repellat eius odit Illo eum incidunt debitis
+      tenetur possimus, ipsa Aut veniam deleniti quaerat quisquam vero! Dolore
+      laudantium error accusantium neque sapiente Alias velit non in
+      voluptatibus.
+      Amet itaque cupiditate repellat eius odit Illo eum incidunt debitis
+      tenetur possimus, ipsa Aut veniam deleniti quaerat quisquam vero! Dolore
+      laudantium error accusantium neque sapiente Alias velit non in
+      voluptatibus.
+      Amet itaque cupiditate repellat eius odit Illo eum incidunt debitis
+      tenetur possimus, ipsa Aut veniam deleniti quaerat quisquam vero! Dolore
+      laudantium error accusantium neque sapiente Alias velit non in
+      voluptatibus.
+      Amet itaque cupiditate repellat eius odit Illo eum incidunt debitis
+      tenetur possimus, ipsa Aut veniam deleniti quaerat quisquam vero! Dolore
+      laudantium error accusantium neque sapiente Alias velit non in
+      voluptatibus.
+      Amet itaque cupiditate repellat eius odit Illo eum incidunt debitis
+      tenetur possimus, ipsa Aut veniam deleniti quaerat quisquam vero! Dolore
+      laudantium error accusantium neque sapiente Alias velit non in
+      voluptatibus.
+      </p>
+      <p class="col">
+      Lorem blanditiis modi sint sunt officia expedita voluptatum Sunt
+      necessitatibus vitae doloremque modi velit Autem porro est atque
+      consequatur perferendis voluptate numquam, qui Quae facilis atque
+      consequuntur illum libero. Deserunt?
+      </p>
+      <p class="col"></p>
+      <p class="col">
+      Lorem blanditiis modi sint sunt officia expedita voluptatum Sunt
+      necessitatibus vitae doloremque modi velit Autem porro est atque
+      consequatur perferendis voluptate numquam, qui Quae facilis atque
+      consequuntur illum libero. Deserunt?
+      </p>
+      <p class="col">
+      Lorem blanditiis modi sint sunt officia expedita voluptatum Sunt
+      necessitatibus vitae doloremque modi velit Autem porro est atque
+      consequatur perferendis voluptate numquam, qui Quae facilis atque
+      consequuntur illum libero. Deserunt?
+      </p>
+    </main>
+    <footer>
+      <p class="contact">contact@pixology.fr — tel: 06.62.26.79.71 — Pixology, Appt 42-93, 11 square de Galicie, 35200 Rennes</p>
+      <p class="logo">px<sup>y</sup></p>
+    </footer>
   </div>
-
 </body>
 </html>
