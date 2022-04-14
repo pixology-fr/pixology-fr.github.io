@@ -1,103 +1,87 @@
-# Fabrice Luraine, design & développement web
+---
+title: Fabrice Luraine / Pixology — Design et Code
+author: Fabrice Luraine alias "Asciilander"
+description: (description)
+asbtract: (idem description, utilisé pour epub3)
+...
 
-    Fabrice Luraine, design & développement web | minimalisme, brutalisme, lowtech, Ruby On Rails et Vanilla Javascript
+# Accueil
 
+Je conçois et développe des solutions techniques, imagine et crée des dispositifs interactifs, des interfaces utilisateur, des systèmes et des identités graphiques.
+J'accompagne des projets d'édition et de communication en ligne avec le souci d'une certaine frugalité numérique pour des solutions web utiles, conviviales, accessibles et durables.
 
-Depuis maintenant une vingtaine d'années, j'accompage des entreprises, organisations et institutions dans leurs projets de communication en ligne et de transformation digitale. Je conçois et développe des solutions techniques, imagine et crée des dispositifs interactifs, des interfaces utilisateurs, des systèmes graphiques. 
-
-Depuis maintenant une vingtaine d'années, j'accompage des entreprises, organisations et institutions dans leur communication et leurs projets digitaux. Je conçois et développe des solutions techniques, imagine et crée des dispositifs interactifs, des interfaces utilisateurs, des systèmes graphiques. 
-
-
-
-
-
-
-
-
-Artisanat
-Code créatif
-Design, inclu autant la forme que la matière, donc pense ensemble design graphique web et code, architecture logicielle
-J'interviens, suis intervenus dans différents champs, domaines d'activité
-une diversité
-Aujourd'hui je privilégie l'accompagnement dans le durée, le temps long 
-pour des collaborations
-je travaille actuellement principalement pour les edc et uriage
-
-recherche , création et production
-conception, consil et dialogue
-à l'écoute des besoins pour la meilleurs solutionm
-
-de la création graphique et interactive à des problématiques techniques avancées
-  → exemples
-Approche globale des dispositifs numériques de communication
-les contenus
-
-économie de moyens couplé à une recherche d'efficience
-
-Conjointement à mon activité de designer / développeur web, je continue à développer ma pratique plastique → asciiland
-
-asciiart, multi-\*
-design génératif, asciiart
-
-Mes deux activités s'enrichissent mutuellement.
-
-
-
-le code au service des activités humaines
-automatiser les tâches répétitives
-
-
-
-
-
-TODO: ajouter une page projets sur asciiland.net
-
-
-
-## Design
-
-Approche brutaliste
-Citation de Norman Potter
+# Compétences et prestations
 
 ## Code
 
-KISS
-explicit over implicit
+- Développement backend Ruby / Ruby On Rails
+- Développement frontend vanilla JS / Stimulus
+- Génération de sites statiques
+- Systèmes / automatisation
 
-Ruby
-JS
+[En savoir +](comptences-et-prestations.html#code)
 
+## Design et code
 
-## Qualité web
+- Direction artistique
+- Intégration CSS / HTML
+- Design génératif et data visualisation
 
-cf certification Opquast
-Méthodologie et expertise
+[En savoir +](comptences-et-prestations.html#design-et-code)
 
-## Résilience, sobriéte technologique et énergétique
+## Design
 
+- Direction artistique
+- Design UX/UI
+- Conseil
 
-## Open source et logiciels libres
+[En savoir +](comptences-et-prestations.html#design)
 
+## Édition
 
-## Partager
+- Direction artistique print / web
+- Mise en page avec LaTeX
+- Création et mise en page d'Epubs
+- Création et mise en forme d'éditions en ligne augmentées HTML/CSS
 
-Enseigner, workshops
-Sites web HTML, CSS
-Créativité (la contrainte ?) avec HTML et CSS… bases
+[En savoir +](comptences-et-prestations.html#edition)
 
-## Domaines / clients / projets
+# Approche
 
-- art contenporain
-- danse contemporaine (musée de la danse, compagnie 391)
-- recherche et développement
-- institutionnel
+Frugalité
+Brutalisme
+Qualité web
 
+# Sélection de projets
 
-## Prestations
+Boocan
 
-### Automatisation…
+Editions du commun
 
-- audit : identifier []
-- aslkduhj
+- [Direction artistique](projets/edc-direction-artistique.html) #direction-artistique
+- [editionsducommun.org](projets/edc-editionsducommun-org.html) #design #code
+- [Editions du commun: collection des réels](projets/edc-collection-des-reels.html) #direction-artistique #design-generatif #print
+- [Editions du commun: collection poésie](projets/edc-collection-des-reels.html) #direction-artistique #print
 
+Laboratoires dermatologiques d'Uriage
 
+- [Collection Marc Larrègue](projets/collection-marc-larregue.html) #code
+- [Uriage.com](projets/uriage-com.html) #code
+
+Autres
+
+- [Comme une ville](projets/comme-une-ville.html) #design #code
+- [Aster Bretagne](projets/aster-bretagne.html) #design #code
+
+# Recherche et création: Asciiland
+
+En quelques lignes
+[asciiland.net](https://www.asciiland.net)
+
+# Á propos
+
+Résumé en quelques lignes
+
+(cv)
+
+[En savoir +](a-propos.html)

@@ -26,6 +26,6 @@ Inspiration
 
 En particulier pour les contenus: https://timothee.goguely.com/
 
-https://designcommun.fr/:w
+https://designcommun.fr/
 
 
