@@ -3,9 +3,9 @@
     Fabrice Luraine, design & développement web | minimalisme, brutalisme, lowtech, Ruby On Rails et Vanilla Javascript
 
 
-Depuis maintenant une vingtaine d'années, j'accompage des entreprises, organisations et institutions dans leurs projets de communication en ligne et de transformation digitale. Je conçois et développe des solutions techniques, imagine et crée des dispositifs interactifs, des interfaces utilisateurs, des systèmes graphiques. 
+Depuis maintenant une vingtaine d'années, j'accompagne des entreprises, organisations et institutions dans leurs projets de communication en ligne et de transformation digitale. Je conçois et développe des solutions techniques, imagine et crée des dispositifs interactifs, des interfaces utilisateurs, des systèmes graphiques. 
 
-Depuis maintenant une vingtaine d'années, j'accompage des entreprises, organisations et institutions dans leur communication et leurs projets digitaux. Je conçois et développe des solutions techniques, imagine et crée des dispositifs interactifs, des interfaces utilisateurs, des systèmes graphiques. 
+Depuis maintenant une vingtaine d'années, j'accompagne des entreprises, organisations et institutions dans leur communication et leurs projets digitaux. Je conçois et développe des solutions techniques, imagine et crée des dispositifs interactifs, des interfaces utilisateurs, des systèmes graphiques. 
 
 
 

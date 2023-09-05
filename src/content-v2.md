@@ -46,6 +46,7 @@ Systèmes
 Frugalité
 Brutalisme
 Qualité web
+[Taco Bell Programming](https://widgetsandshit.com/teddziuba/2010/10/taco-bell-programming.html)
 
 # Sélection de projets
 
