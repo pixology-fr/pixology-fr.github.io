@@ -72,6 +72,17 @@ Des scripts shell
 
 
 
+## Assurance Qualité Web
+
+cf Opquast
+
+> Bien entendu, vous n’êtes pas obligés de devenir experts de ces sujets, le
+web a besoin d’expert mais aussi de généralistes à même de faire le lien entre
+les expertises. 
+> — <https://www.opquast.com/certifiee-opquast-mais-encore/>
+
+Expert sur le code, mais aussi plus généraliste, concrétisé par cette certification et mes compétences transversales design / code / éditon.
+C'est ce qui me permet de garder une vision large des contextes projet tout en travaillant sur des problématiques spécifique, liées en particulier au code.
 
 
 
