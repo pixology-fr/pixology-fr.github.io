@@ -81,13 +81,22 @@
     .s3 {color: yellow}
 
     .text {
-      font-size: 2em;
-      max-width: 50ch;
+      font-size: 1.7em;
+      max-width: 59ch;
       padding-left: 2ch;
+      margin-top: 3em;
+    }
+    .text .accent {
+      color: red;
     }
     .text h1 {
       font-size: 2em;
       color: red;
+      margin-bottom: 0;
+      line-height: 1;
+    }
+    .text .subtitle {
+      margin-top: 0;
     }
     .text li {
       list-style-type: none;
@@ -96,49 +105,57 @@
     }
     .text li:before {
       content: "☼ ";
+      color: red;
+    }
+    .text header {
+      margin-bottom: 3em;
     }
   </style>
 </head>
 <body>
-  <main class="text">
-    <h1>Fabrice LURAINE</h1>
-    <p>
-      <strong>
-       Digital maker ☼ Ruby / Rails developer
-      </strong>
-    </p>
-    <p>Cela fait une vingtaine d’années que j’oeuvre sur le web pour imaginer
-    et créer des sites / applications, développer des solutions techniques,
-    ou produire et maintenenir des services d’infrastructures digitales. Mes
-    clients sont des entreprises et organisations de toutes tailles et
-    évoluent dans des secteur variés: tech, art et culture, médical,
-    cosmétique, édition…</p>
-    <p>Je les accompagne dans la durée en mettant l’accent en particulier
-    sur:</p>
-    <ul>
-    <li>une écoute et un dialogue régulier pour toujours conserver une
-    vision globale du contexte et des enjeux du projet, tout en intervenant
-    de manière pragmatique avec une réelle attention pour le détail</li>
-    <li>une certaine frugalité numérique pour des solutions utiles,
-    conviviales, accessibles et durables</li>
-    </ul>
-    <p>Et parce qu’aucun projet ne se ressemble et que les typologies de
-    besoins peuvent-être très différentes, j’interviens si nécessaire avec
-    <a href="https://spacedotspace.com">une équipe de freelances
-    constituée</a>.</p>
-    <p>Je travaille actuellement avec</p>
-    <ul>
-    <li>le <a href="https://ccnrb.org/">Collectif Fair—e / CCNRB</a></li>
-    <li>les Laboratoires Dermatologiques d’Uriage</li>
-    <li>les <a href="https://www.editionsducommun.org/">Éditions du
-    commun</a></li>
-    </ul>
-    <p>En parallèle, je mène une activité de recherche et création à la
-    croisée du code, du design et de l’édition → <a
-    href="https://asciiland.net">asciiland.net</a></p>
-    <p>Envie d’échanger sur un projet ? N’hésitez pas à <a
-    href="mailto:h.o.l.a@pixology.fr">me contacter</a>.</p>
-  </main>
+  <div class="text">
+    <header>
+      <h1>Fabrice LURAINE</h1>
+      <p class="subtitle">
+        <strong>
+         Digital maker <span class="accent">☼</span> Ruby / Rails developer
+        </strong>
+      </p>
+    </header>
+    <main>
+      <p>Cela fait une vingtaine d’années que j’oeuvre sur le web pour imaginer
+      et créer des sites / applications, développer des solutions techniques,
+      ou produire et maintenenir des services d’infrastructures digitales. Mes
+      clients sont des entreprises et organisations de toutes tailles et
+      évoluent dans des secteur variés: tech, art et culture, médical,
+      cosmétique, édition…</p>
+      <p>Je les accompagne dans la durée en mettant l’accent en particulier
+      sur:</p>
+      <ul>
+      <li>une écoute et un dialogue régulier pour toujours conserver une
+      vision globale du contexte et des enjeux du projet, tout en intervenant
+      de manière pragmatique avec une réelle attention pour le détail</li>
+      <li>une certaine frugalité numérique pour des solutions utiles,
+      conviviales, accessibles et durables</li>
+      </ul>
+      <p>Et parce qu’aucun projet ne se ressemble et que les typologies de
+      besoins peuvent-être très différentes, j’interviens si nécessaire avec
+      <a href="https://spacedotspace.com">une équipe de freelances
+      constituée</a>.</p>
+      <p>Je travaille actuellement avec</p>
+      <ul>
+      <li>le <a href="https://ccnrb.org/">Collectif Fair—e / CCNRB</a></li>
+      <li>les Laboratoires Dermatologiques d’Uriage</li>
+      <li>les <a href="https://www.editionsducommun.org/">Éditions du
+      commun</a></li>
+      </ul>
+      <p>En parallèle, je mène une activité de recherche et création à la
+      croisée du code, du design et de l’édition → <a
+      href="https://asciiland.net">asciiland.net</a></p>
+      <p>Envie d’échanger sur un projet ? N’hésitez pas à <a
+      href="mailto:h.o.l.a@pixology.fr">me contacter</a>.</p>
+    </main>
+  </div>
   <div class="container">
     <header>
       <figure class="logo" role="img" aria-labelledby="pixology-logo-caption">
